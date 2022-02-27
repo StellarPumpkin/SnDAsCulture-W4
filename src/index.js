@@ -58,3 +58,60 @@ function modalOpener(modal) {
     }
   }
   
+function five(first_modal, second_modal,third_modal,fourth_modal, fifth_modal,sixth_modal){
+    let a = document.getElementById(first_modal);
+    let b = document.getElementById(second_modal);
+    let c = document.getElementById(third_modal);
+    let d = document.getElementById(fourth_modal);
+    let e = document.getElementById(fifth_modal);
+    let f = document.getElementById(sixth_modal);
+    if (a.style.display === "block" ) {
+      a.style.display = "none";
+      
+      b.style.display = "block";
+      c.style.display = "block";
+      d.style.display = "block";
+      e.style.display = "block";
+      f.style.display = "block";
+    } else {
+      a.style.display = "block";
+      b.style.display = "none"
+      c.style.display = "none";
+      d.style.display = "none";
+      e.style.display = "none";
+      f.style.display = "none";
+    }
+}
+function show(first){
+    document.getElementById(first).style.display = 'block';
+}
+function one_sec(first)
+{   
+    setTimeout(function() {
+        document.getElementById(first).style.display = 'block';
+    }, 1000);
+}
+
+function two_sec(first)
+{   
+    setTimeout(function() {
+        document.getElementById(first).style.display = 'block';
+    }, 2000);
+}
+
+function three_sec(first)
+{   
+    setTimeout(function() {
+        document.getElementById(first).style.display = 'block';
+    }, 3000);
+}
+
+function four_sec(first,second)
+{   
+    setTimeout(function() {
+        
+        document.getElementById(first).style.display = 'block';
+        document.getElementById(second).style.display = 'none';
+       
+    }, 4000);
+}

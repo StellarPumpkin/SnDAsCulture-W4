@@ -9,200 +9,416 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="initial_page">
-      <div class="bark_wrapper">
-        <img
-          class="bark"
-          src="media/BARK Sugerberg.gif"
-          alt="description of gif"
-        />
-        <button class="hello" id="" onclick="modalOpener('first_modal')">
-          Hello?
-        </button>
-      </div>
-      <div class="ad_1_wrapper">
-        <img
-          id="ad_1"
-          class="ad_1"
-          src="media/WhatsApp Image 2022-02-26 at 18.42.14 (1).jpg"
-        />
-      </div>
-    </div>
-    <div class="ad_2_wrapper">
+    <div id="ad_8_wrapper">
       <img
-        id="ad_2"
-        class="ad_2"
-        src="media/WhatsApp Image 2022-02-26 at 18.42.13 (1).jpeg"
+        id="ad_8"
+        class="ad_8"
+        src="media/WhatsApp Image 2022-02-26 at 18.42.14.jpeg"
       />
     </div>
-    <!--first modal-->
-    <div id="first_modal" class="first_modal modal">
-      <p class="message">But first, cookies!</p>
-      <div class="options">
-        <button
-          class="btn"
-          onclick="modalCloser('first_modal','second_modal_accept')"
-        >
-          Accept
-        </button>
-        <button
-          class="btn"
-          onclick="modalCloser('first_modal','second_modal_decline')"
-        >
-          Decline
-        </button>
+    <div id="main">
+      <div class="initial_page">
+        <div class="bark_wrapper">
+          <img
+            class="bark"
+            src="media/BARK Sugerberg.gif"
+            alt="description of gif"
+          />
+          <button class="hello" id="" onclick="modalOpener('first_modal')">
+            Hello?
+          </button>
+        </div>
+        <div class="ad_1_wrapper">
+          <img
+            id="ad_1"
+            class="ad_1"
+            src="media/WhatsApp Image 2022-02-26 at 18.42.14 (1).jpg"
+          />
+        </div>
       </div>
-    </div>
-    <!--second modal: accepted first modal-->
-    <div id="second_modal_accept" class="second_modal modal">
-      <p class="message">Do you like the Beatles?</p>
-      <div class="options">
-        <button
-          class="btn"
-          onclick="severalModals('second_modal_accept','third_modal_accept','third_modal_random','ad_1')"
-        >
-          Yes
-        </button>
-        <button
-          class="btn"
-          onclick="severalModals('second_modal_accept','second_modal_decline','third_modal_random','ad_1')"
-        >
-          No
-        </button>
+      <div class="ad_2_wrapper">
+        <img
+          id="ad_2"
+          class="ad_2"
+          src="media/WhatsApp Image 2022-02-26 at 18.42.13 (1).jpeg"
+        />
       </div>
-    </div>
-    <!--second modal: declined first modal-->
-    <div id="second_modal_decline" class="second_modal">
-      <p class="message">
-        Are you really sure you don't want to accept cookies?
-      </p>
-      <div class="options">
-        <button
-          class="btn"
-          onclick="severalModals('second_modal_decline','third_modal_decline','third_modal_random','ad_1')"
-        >
-          Yes
-        </button>
-        <button
-          class="btn"
-          onclick="severalModals('second_modal_decline','third_modal_accept','third_modal_random','ad_1')"
-        >
-          No
-        </button>
+      <!--first modal-->
+      <div id="first_modal" class="first_modal modal">
+        <p class="message">But first, cookies!</p>
+        <div class="options">
+          <button
+            class="btn"
+            onclick="modalCloser('first_modal','second_modal_accept')"
+          >
+            Accept
+          </button>
+          <button
+            class="btn"
+            onclick="modalCloser('first_modal','second_modal_decline')"
+          >
+            Decline
+          </button>
+        </div>
       </div>
-    </div>
-    <!--third modal: accepted second modal-->
-    <div id="third_modal_accept" class="third_modal">
-      <p class="message">Do you like the Rolling Stones?</p>
-      <div class="options">
-        <button
-          class="btn"
-          onclick="fourthStage('third_modal_accept','fourth_modal_accept','fourth_modal_random_1','fourth_modal_random_2','ad_2')"
-        >
-          Yes
-        </button>
-        <button
-          class="btn"
-          onclick="fourthStage('third_modal_accept','fourth_modal_decline','fourth_modal_random_1','fourth_modal_random_2','ad_2')"
-        >
-          No
-        </button>
+      <!--second modal: accepted first modal-->
+      <div id="second_modal_accept" class="second_modal modal">
+        <p class="message">Do you like the Beatles?</p>
+        <div class="options">
+          <button
+            class="btn"
+            onclick="severalModals('second_modal_accept','third_modal_accept','third_modal_random','ad_1')"
+          >
+            Yes
+          </button>
+          <button
+            class="btn"
+            onclick="severalModals('second_modal_accept','second_modal_decline','third_modal_random','ad_1')"
+          >
+            No
+          </button>
+        </div>
       </div>
-    </div>
-    <!--third modal: declined second modal-->
-    <div id="third_modal_decline" class="third_modal">
-      <p class="message">Are you in a relationship?</p>
-      <div class="options">
-        <button class="btn" onclick="fourthStage('third_modal_decline','fourth_modal_relationsip_accept','fourth_modal_random_1','fourth_modal_random_2','ad_2')"
-        >Yes</button>
-        <button class="btn" onclick="fourthStage('third_modal_decline','fourth_modal_relationship_decline','fourth_modal_random_1','fourth_modal_random_2','ad_2')"
-        >No</button>
+      <!--second modal: declined first modal-->
+      <div id="second_modal_decline" class="second_modal">
+        <p class="message">
+          Are you really sure you don't want to accept cookies?
+        </p>
+        <div class="options">
+          <button
+            class="btn"
+            onclick="severalModals('second_modal_decline','third_modal_decline','third_modal_random','ad_1')"
+          >
+            Yes
+          </button>
+          <button
+            class="btn"
+            onclick="severalModals('second_modal_decline','third_modal_accept','third_modal_random','ad_1')"
+          >
+            No
+          </button>
+        </div>
       </div>
-    </div>
-    <!--third modal: extra modal onclick-->
-    <div id="third_modal_random" class="third_modal_random">
-      <p class="message">Would you like to login using your Facebook?</p>
-      <div class="options">
-        <button
-          class="btn"
-          onclick="fourthStage('third_modal_random','facebook_img','fourth_modal_random_1','fourth_modal_random_2','ad_2')"
-        >
-          Yes
-        </button>
-        <button class="btn" onclick="fourthStage('third_modal_random','third_modal_decline','fourth_modal_random_1','fourth_modal_random_2','ad_2')"
-        >No</button>
+      <!--third modal: accepted second modal-->
+      <div id="third_modal_accept" class="third_modal">
+        <p class="message">Do you like the Rolling Stones?</p>
+        <div class="options">
+          <button
+            class="btn"
+            onclick="fourthStage('third_modal_accept','fourth_modal_accept','fourth_modal_random_1','fourth_modal_random_2','ad_2')"
+          >
+            Yes
+          </button>
+          <button
+            class="btn"
+            onclick="fourthStage('third_modal_accept','fourth_modal_decline','fourth_modal_random_1','fourth_modal_random_2','ad_2')"
+          >
+            No
+          </button>
+        </div>
       </div>
-    </div>
-    <!--fourth modal: accepted third extra modal-->
-    <div class="facebook_img_wrapper">
-      <img
-        class="facebook_img"
-        id="facebook_img"
-        src="media/3021307-inline-fb-likebutton-printpackaging.png"
-      />
-    </div>
-    <!--fourth modal: accepted third modal-->
-    <div id="fourth_modal_accept" class="fourth_modal">
-      <p class="message">What about Mike Oldfiled?</p>
-      <div class="options">
-        <button class="btn">Like</button>
-        <button class="btn">No</button>
+      <!--third modal: declined second modal-->
+      <div id="third_modal_decline" class="third_modal">
+        <p class="message">Are you in a relationship?</p>
+        <div class="options">
+          <button
+            class="btn"
+            onclick="fourthStage('third_modal_decline','fourth_modal_relationsip_accept','fourth_modal_random_1','fourth_modal_random_2','ad_2')"
+          >
+            Yes
+          </button>
+          <button
+            class="btn"
+            onclick="fourthStage('third_modal_decline','fourth_modal_relationship_decline','fourth_modal_random_1','fourth_modal_random_2','ad_2')"
+          >
+            No
+          </button>
+        </div>
       </div>
-    </div>
-    <!--fourth modal: declined third modal-->
-    <div id="fourth_modal_decline" class="fourth_modal">
-      <iframe
-        width="360"
-        height="115"
-        src="https://www.youtube.com/embed/6JtyHjvnwP8?controls=0&amp;start=24"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <!--fourth modal: accepted third declined modal-->
-    <div id="fourth_modal_relationsip_accept" class="fourth_modal">
-            <p class="message">Would you like to login using your instagram?</p>
-            <div class="options">
-              <button class="btn" onclick="severalModals('fourth_modal_relationsip_accept','inst_img','second_modal_decline','ad_3')">Yes</button>
-              <button class="btn">No</button>
-            </div>
-          </div>
-    <!--if fourth modal: accepted third declined modal ACCEPTED-->
-    <div class="inst_img_wrapper">
-            <img
-              class="inst_img"
-              id="inst_img"
-              src="media/250-2.jpeg"
-            />
-          </div>
-    <!--fourth modal: declined third declined modal-->
-    <div id="fourth_modal_relationship_decline" class="fourth_modal">
-            <p class="message">Do you ever feel useless?</p>
-            <div class="options">
-              <button class="btn">Yes</button>
-              <button class="btn">No</button>
-            </div>
-          </div>
-    <!--fourth modal: extra modal onclick-->
-    <div id="fourth_modal_random_1" class="fourth_modal_random_1">
-      <p class="message">Do you have a Tesla?</p>
-      <div class="options">
-        <button class="btn">Yes</button>
-        <button class="btn">No</button>
+      <!--third modal: extra modal onclick-->
+      <div id="third_modal_random" class="third_modal_random">
+        <p class="message">Would you like to login using your Facebook?</p>
+        <div class="options">
+          <button
+            class="btn"
+            onclick="fourthStage('third_modal_random','facebook_img','fourth_modal_random_1','fourth_modal_random_2','ad_2')"
+          >
+            Yes
+          </button>
+          <button
+            class="btn"
+            onclick="fourthStage('third_modal_random','third_modal_decline','fourth_modal_random_1','fourth_modal_random_2','ad_2')"
+          >
+            No
+          </button>
+        </div>
       </div>
-    </div>
-    <!--fourth modal: extra modal onclick-->
-    <div id="fourth_modal_random_2" class="fourth_modal_random_2">
-      <p class="message">Did you watch 'Once upon a time in the West"?</p>
-      <div class="options">
-        <button class="btn">Yes</button>
-        <button class="btn">No</button>
+      <!--fourth modal: accepted third extra modal-->
+      <div class="facebook_img_wrapper">
+        <img
+          class="facebook_img"
+          id="facebook_img"
+          src="media/3021307-inline-fb-likebutton-printpackaging.png"
+        />
       </div>
-    </div>
-    <div class="ad_3_wrapper">
-        <img id="ad_3" class="ad_3" src="media/WhatsApp Image 2022-02-26 at 18.42.13 (3).jpeg">
+      <!--fourth modal: accepted third modal-->
+      <div id="fourth_modal_accept" class="fourth_modal">
+        <p class="message">What about Mike Oldfiled?</p>
+        <div class="options">
+          <button
+            class="btn"
+            onclick="five('fourth_modal_accept','accept_1','accept_2','accept_3','accept_4','accept_5')"
+          >
+            Like
+          </button>
+          <button
+            class="btn"
+            onclick="five('fourth_modal_accept','accept_1','accept_2','accept_3','accept_4','accept_5')"
+          >
+            No
+          </button>
+        </div>
+      </div>
+      <!--fourth modal: declined third modal-->
+      <div id="fourth_modal_decline" class="fourth_modal">
+        <iframe
+          width="360"
+          height="115"
+          src="https://www.youtube.com/embed/6JtyHjvnwP8?controls=0&amp;start=24"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <!--fourth modal: accepted third declined modal-->
+      <div id="fourth_modal_relationsip_accept" class="fourth_modal">
+        <p class="message">Would you like to login using your instagram?</p>
+        <div class="options">
+          <button
+            class="btn"
+            onclick="severalModals('fourth_modal_relationsip_accept','inst_img','second_modal_decline','ad_3')"
+          >
+            Yes
+          </button>
+          <button
+            class="btn"
+            onclick="severalModals('fourth_modal_relationsip_accept','fourth_modal_relationship_decline','ad_3','inst_img')"
+          >
+            No
+          </button>
+        </div>
+      </div>
+      <!--if fourth modal: accepted third declined modal ACCEPTED-->
+      <div class="inst_img_wrapper">
+        <img class="inst_img" id="inst_img" src="media/250-2.jpeg" />
+      </div>
+      <!--fourth modal: declined third declined modal-->
+      <div id="fourth_modal_relationship_decline" class="fourth_modal">
+        <p class="message">Do you ever feel useless?</p>
+        <div class="options">
+          <button
+            class="btn"
+            onclick="five('fourth_modal_relationship_decline','accept_1','accept_2','accept_3','accept_4','accept_5')"
+          >
+            Yes
+          </button>
+          <button
+            class="btn"
+            onclick="five('fourth_modal_relationship_decline','accept_1','accept_2','accept_3','accept_4','accept_5')"
+          >
+            No
+          </button>
+        </div>
+      </div>
+      <!--fourth modal: extra modal onclick-->
+      <div id="fourth_modal_random_1" class="fourth_modal_random_1">
+        <p class="message">Do you have a Tesla?</p>
+        <div class="options">
+          <button
+            class="btn"
+            onclick="severalModals('fourth_modal_random_1','second_modal_decline','ad_4','ad_5')"
+          >
+            Yes
+          </button>
+          <button
+            class="btn"
+            onclick="fourthStage('fourth_modal_random_1','second_modal_decline','fifth_modal_harry_potter','ad_4','ad_5')"
+          >
+            No
+          </button>
+        </div>
+      </div>
+      <!--fourth modal: extra modal onclick-->
+      <div id="fourth_modal_random_2" class="fourth_modal_random_2">
+        <p class="message">Did you watch "Once upon a time in the West"?</p>
+        <div class="options">
+          <button
+            class="btn"
+            onclick="severalModals('fourth_modal_random_2', 'sixth_modal_secrets','third_modal_random','seventh_modal_secrets')"
+          >
+            Yes
+          </button>
+          <button
+            class="btn"
+            onclick="five('fourth_modal_random_2','accept_1','accept_2','accept_3','accept_4','accept_5')"
+          >
+            No
+          </button>
+        </div>
+      </div>
+      <div id="fifth_modal_harry_potter" class="fifth_modal_harry_potter">
+        <p class="message">
+          Did you watch Harry Potter and the chamber of secrets?
+        </p>
+        <div class="options">
+          <button
+            class="btn"
+            onclick="fourthStage('fifth_modal_harry_potter', 'sixth_modal_secrets','third_modal_random','seventh_modal_secrets','ad_6')"
+          >
+            Yes
+          </button>
+          <button
+            class="btn"
+            onclick="fourthStage('fifth_modal_harry_potter', 'ad_6','seventh_modal_secrets','third_modal_random','ad_3')"
+          >
+            No
+          </button>
+        </div>
+      </div>
+      <div id="sixth_modal_secrets" class="sixth_modal_secrets">
+        <p class="message">
+          Do you have a lot of secrets yourself?
+        </p>
+        <div class="options">
+          <button
+            class="btn"
+            onclick="five('seventh_modal_secrets','accept_1','accept_2','accept_3','accept_4','accept_5')"
+          >
+            Yes
+          </button>
+          <button
+            class="btn"
+            onclick="five('seventh_modal_secrets','accept_1','accept_2','accept_3','accept_4','accept_5')"
+          >
+            No
+          </button>
+        </div>
+      </div>
+      <div id="seventh_modal_secrets" class="seventh_modal_secrets">
+        <p class="message">
+          So you'll accept cookies?
+        </p>
+        <div class="options">
+          <button
+            class="btn"
+            onclick="five('seventh_modal_secrets','accept_1','accept_2','accept_3','accept_4','accept_5')"
+          >
+            Yes
+          </button>
+          <button
+            class="btn"
+            onclick="five('seventh_modal_secrets','accept_1','accept_2','accept_3','accept_4','accept_5')"
+          >
+            No
+          </button>
+        </div>
+      </div>
+      <div id="accept_1" class="accept_1">
+        <p class="message">
+          ACCEPT!
+        </p>
+        <div class="options">
+          <button
+            class="btn"
+            onclick="show('ad_7');one_sec('b_1');two_sec('b_2');three_sec('b_3');four_sec('ad_8_wrapper','main')"
+          >
+            Yes
+          </button>
+        </div>
+      </div>
+      <div id="accept_2" class="accept_2">
+        <p class="message">
+          ACCEPT!ACCEPT!ACCEPT!
+        </p>
+        <div class="options">
+          <button class="btn" onclick="show('ad_7');one_sec('b_1');two_sec('b_2');three_sec('b_3');four_sec('ad_8_wrapper','main')"
+          >Yes</button>
+        </div>
+      </div>
+      <div id="accept_3" class="accept_3">
+        <p class="message">
+          Please, accept the cookies. Thank you.
+        </p>
+        <div class="options">
+          <button class="btn" onclick="show('ad_7');one_sec('b_1');two_sec('b_2');three_sec('b_3');four_sec('ad_8_wrapper','main')"
+          >Yes</button>
+        </div>
+      </div>
+      <div id="accept_4" class="accept_4">
+        <p class="message">
+          You have to consent or else...
+        </p>
+        <div class="options">
+          <button class="btn" onclick="show('ad_7');one_sec('b_1');two_sec('b_2');three_sec('b_3');four_sec('ad_8_wrapper','main')"
+          >Yes</button>
+        </div>
+      </div>
+      <div id="accept_5" class="accept_5">
+        <p class="message">
+          Do you love your parents?
+        </p>
+        <div class="options">
+          <button class="btn" onclick="show('ad_7');one_sec('b_1');two_sec('b_2');three_sec('b_3');four_sec('ad_8_wrapper','main')"
+          >Yes</button>
+        </div>
+      </div>
+      <div class="ad_3_wrapper">
+        <img
+          id="ad_3"
+          class="ad_3"
+          src="media/WhatsApp Image 2022-02-26 at 18.42.13 (3).jpeg"
+        />
+      </div>
+      <div class="ad_4_wrapper">
+        <img
+          id="ad_4"
+          class="ad_4"
+          src="media/WhatsApp Image 2022-02-26 at 18.42.12.jpg"
+        />
+      </div>
+      <div class="ad_5_wrapper">
+        <img
+          id="ad_5"
+          class="ad_5"
+          src="media/WhatsApp Image 2022-02-26 at 18.42.13 (5).jpeg"
+        />
+      </div>
+      <div class="ad_6_wrapper">
+        <img
+          id="ad_6"
+          class="ad_6"
+          src="media/WhatsApp Image 2022-02-26 at 18.42.13 (4).jpg"
+        />
+      </div>
+      <div class="ad_7_wrapper">
+        <img
+          id="ad_7"
+          class="ad_7"
+          src="media/WhatsApp Image 2022-02-26 at 18.42.13 (2).jpeg"
+        />
+      </div>
+
+      <!--button group-->
+      <div class="b_1_wrapper">
+        <button id="b_1" class="b_1">ACCEPT</button>
+      </div>
+      <div class="b_2_wrapper">
+        <button id="b_2" class="b_2">ACCEPT</button>
+      </div>
+      <div class="b_3_wrapper">
+        <button id="b_3" class="b_3">ACCEPT</button>
+      </div>
     </div>
   </body>
 </html>
