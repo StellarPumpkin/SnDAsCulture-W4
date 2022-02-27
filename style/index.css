@@ -1,0 +1,257 @@
+body {
+  color: black;
+  font-family: "Questrial", sans-serif;
+}
+.initial_page{
+    
+    position: relative;
+}
+.hello_button{
+    position: relative;
+    
+}
+
+.bark {
+  height: 30%;
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*hiding modals and objects*/
+#first_modal,
+#second_modal_accept,
+#second_modal_decline,
+#third_modal_accept,
+#third_modal_decline,
+#third_modal_random,
+#fourth_modal_accept,
+#fourth_modal_decline,
+#fourth_modal_random_1,
+#fourth_modal_random_2,
+#fourth_modal_relationsip_accept,
+#fourth_modal_relationship_decline,
+#ad_1,
+#ad_2,
+#ad_3,
+#facebook_img,
+#inst_img {
+  display: none;
+}
+/*inside of the modal*/
+.message {
+    font-size: 1.1rem;
+    margin-bottom: 1.6rem;
+    margin-top: 0;
+  }
+  .btn {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    background: white;
+    padding: 0.3rem 3.4rem;
+    border: 3px solid black;
+    margin-right: 2.6rem;
+    box-shadow: 0 0 0 black;
+    transition: all 0.2s;
+  }
+  
+  .btn:last-child {
+    margin: 0;
+  }
+  
+  .btn:hover {
+    box-shadow: 0.4rem 0.4rem 0 black;
+    transform: translate(-0.4rem, -0.4rem);
+  }
+  
+  .btn:active {
+    box-shadow: 0 0 0 black;
+    transform: translate(0, 0);
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+/*first modal*/
+.first_modal{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.6rem 3rem;
+  border: 3px solid black;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*second modal*/
+.second_modal {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.6rem 3rem;
+  border: 3px solid black;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/*third modal*/
+.third_modal {
+  position: absolute;
+  left: 70%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.6rem 3rem;
+  border: 3px solid black;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/*third random modal*/
+.third_modal_random {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1rem;
+  border: 3px solid black;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fourth_modal{
+    position: absolute;
+    left: 70%;
+    top: 20%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  border: 3px solid black;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.fourth_modal_random_1{
+    position: absolute;
+  left: 15%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.1rem 1rem;
+  border: 3px solid black;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.fourth_modal_random_2{
+    position: absolute;
+  left: 65%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  border: 3px solid black;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*ads style*/
+.ad_1_wrapper{
+    position: absolute;
+    bottom: 0.1px;
+   left: 500px;
+   
+}
+.ad_1{
+   height: 40%;
+  width: 50%;
+  
+}
+.ad_2_wrapper{
+    position: absolute;
+    top: 0px;
+    left:0px;
+}
+.ad_2{
+    height: 30%;
+  width: 40%;
+}
+
+.ad_3_wrapper{
+    position: absolute;
+    top: 0px;
+    left:800px;
+}
+.ad_3{
+    height: 60%;
+  width: 70%;
+}
+
+.facebook_img_wrapper{
+    position: absolute;
+    left: 20%;
+  top: 30%;
+}
+.facebook_img{
+    height: 30%;
+  width: 40%;
+}
+
+.inst_img_wrapper{
+    position: absolute;
+    left: 70%;
+  top: 50%;
+}
+.inst_img{
+    height: 70%;
+  width: 80%;
+}
+
+
+.hello{
+    
+    font-size: 24px;
+    border: 2px solid black;
+}
+
+.hello:hover {
+    background-color: yellow;
+  }
